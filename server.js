@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public/dist/public'));
 
 //ROUTES
-// require('./routes')(app)
+require('./routes')(app)
 
 //SERVER LISTEN
 app.listen(8000, function(){

@@ -2,12 +2,6 @@
     const Task = require("./models")
 
 //EXPORT OUR CONTROLLERS SO OUR ROUTES CAN ACCESS IT
-// app.get('/', controller.index)  
-// app.get('/:id', controller.getTask)
-// app.post('/new', controller.addTask)
-// app.put('/update/:id', controller.updTask)
-// app.delete('/remove/:id', controller.remTask)
-
 module.exports = {
 
     index:function(req, res){
