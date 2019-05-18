@@ -5,9 +5,9 @@
 module.exports = {
 
     index:function(req, res){
-        console.log(req.body, req.params);
+//        console.log(req.body, req.params);
         Task.find({}, function(err, tasks) {
-            console.log(err, tasks);
+//            console.log(err, tasks);
             res.json(tasks);
         })
     },
@@ -37,7 +37,7 @@ module.exports = {
     },
 
     updTask:function(req, res) {
-        console.log(req.body, req.params);
+        console.log("Reached updTask", req.body, req.params);
         Task.findByIdAndUpdate(req.params.id, req.body, 
             function(err, task) {
                 if (err) {
